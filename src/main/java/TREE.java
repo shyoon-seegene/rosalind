@@ -10,8 +10,6 @@ public class TREE {
 
     public static void main(String[] args) throws IOException {
 
-        failedLogic1();
-
         List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_tree.txt"));
         int n = Integer.valueOf(lines.get(0));
 
@@ -21,10 +19,61 @@ public class TREE {
         int groupNum = 0;
 
         for(int i=1; i<lines.size(); i++){
-            
+            String[] s = lines.get(i).split("\\s+");
+            int n1 = Integer.valueOf(s[0]);
+            int n2 = Integer.valueOf(s[1]);
+
+            if(memberIndexMap.get(n1)==null && memberIndexMap.get(n2)==null){
+                memberIndexMap.put(n1, groupNum);
+                memberIndexMap.put(n2, groupNum);
+                Set<Integer> set = new TreeSet<>();
+                set.add(n1);
+                set.add(n2);
+                groupMap.put(groupNum, set);
+                groupNum++;
+            }else if(memberIndexMap.get(n1)!=null && memberIndexMap.get(n2)==null){
+                int prevGroupNum = memberIndexMap.get(n1);
+                memberIndexMap.put(n2, prevGroupNum);
+                Set<Integer> set = groupMap.get(prevGroupNum);
+                set.add(n2);
+                groupMap.put(prevGroupNum, set);
+            }else if(memberIndexMap.get(n1)==null && memberIndexMap.get(n2)!=null){
+                int prevGroupNum = memberIndexMap.get(n2);
+                memberIndexMap.put(n1, prevGroupNum);
+                Set<Integer> set = groupMap.get(prevGroupNum);
+                if(set==null){
+                    System.out.println(memberIndexMap.get(n1));
+                    System.out.println(memberIndexMap.get(n2));
+                    System.out.println(lines.get(i));
+                    System.out.println(memberIndexMap);
+                    System.out.println(groupMap);
+                    System.out.println(prevGroupNum);
+                }
+                set.add(n1);
+                groupMap.put(prevGroupNum, set);
+            }else if(memberIndexMap.get(n1) < memberIndexMap.get(n2)){
+                int groupNum1 = memberIndexMap.get(n1);
+                int groupNum2 = memberIndexMap.get(n2);
+                Set<Integer> set = groupMap.get(groupNum1);
+                for(Integer nn : groupMap.get(groupNum2)) memberIndexMap.put(nn, groupNum1);
+                set.addAll(groupMap.get(groupNum2));
+                groupMap.put(groupNum1, set);
+                groupMap.remove(groupNum2);
+            }else if(memberIndexMap.get(n1) > memberIndexMap.get(n2)){
+                int groupNum1 = memberIndexMap.get(n1);
+                int groupNum2 = memberIndexMap.get(n2);
+                Set<Integer> set = groupMap.get(groupNum2);
+                for(Integer nn : groupMap.get(groupNum1)) memberIndexMap.put(nn, groupNum2);
+                set.addAll(groupMap.get(groupNum1));
+                groupMap.put(groupNum2, set);
+                groupMap.remove(groupNum1);
+            }else continue;
+
         }
 
-
+        System.out.println("g:"+groupMap.size());
+        System.out.println("m:"+memberIndexMap.size());
+        System.out.println(n - memberIndexMap.size() + groupMap.size() -1);
 
 
     }
@@ -190,26 +239,26 @@ public class TREE {
         System.out.println(setSum);
         System.out.println(sset.size());
 
-        Map<Integer, Integer> checkMap = new HashMap<>();
-        for(int i=0; i<sset.size(); i++){
-            Set<Integer> set = sset.get(i);
-            for(int num : set){
-                if(checkMap.containsKey(num)) System.out.println("Error With " + num);
-                checkMap.put(num, i);
-            }
-        }
-
-        FileWriter fw = new FileWriter(new File("C:/dev/rosalind/rosalind_tree_check.txt"));
-        for(int j=1; j<lines.size(); j++) {
-            String[] s = lines.get(j).split("\\s+");
-            int n1 = Integer.valueOf(s[0]);
-            int n2 = Integer.valueOf(s[1]);
-            if(checkMap.get(n1) != checkMap.get(n2)){
-                System.out.println("Error With " + lines.get(j));
-            }else{
-                fw.write(lines.get(j) + "\t" + checkMap.get(n1) + "\n");
-            }
-        }
-        fw.close();
+//        Map<Integer, Integer> checkMap = new HashMap<>();
+//        for(int i=0; i<sset.size(); i++){
+//            Set<Integer> set = sset.get(i);
+//            for(int num : set){
+//                if(checkMap.containsKey(num)) System.out.println("Error With " + num);
+//                checkMap.put(num, i);
+//            }
+//        }
+//
+//        FileWriter fw = new FileWriter(new File("C:/dev/rosalind/rosalind_tree_check.txt"));
+//        for(int j=1; j<lines.size(); j++) {
+//            String[] s = lines.get(j).split("\\s+");
+//            int n1 = Integer.valueOf(s[0]);
+//            int n2 = Integer.valueOf(s[1]);
+//            if(checkMap.get(n1) != checkMap.get(n2)){
+//                System.out.println("Error With " + lines.get(j));
+//            }else{
+//                fw.write(lines.get(j) + "\t" + checkMap.get(n1) + "\n");
+//            }
+//        }
+//        fw.close();
     }
 }
