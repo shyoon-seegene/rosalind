@@ -1,3 +1,5 @@
+package bioinfomatics_stronghold;
+
 import com.seegene.insilico.platform.core.bioutil.domain.SeqDomainList;
 import com.seegene.insilico.platform.core.bioutil.io.FastSeqReader;
 import com.seegene.insilico.platform.core.bioutil.io.Seqtools;

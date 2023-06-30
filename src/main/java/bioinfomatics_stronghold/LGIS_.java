@@ -1,3 +1,5 @@
+package bioinfomatics_stronghold;
+
 import org.apache.commons.io.IOUtils;
 
 import java.io.FileNotFoundException;

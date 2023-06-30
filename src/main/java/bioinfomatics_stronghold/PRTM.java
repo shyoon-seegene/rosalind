@@ -1,3 +1,5 @@
+package bioinfomatics_stronghold;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,3 +1,5 @@
+package bioinfomatics_stronghold;
+
 import com.seegene.insilico.platform.core.bioutil.io.Seqtools;
 
 import java.util.HashSet;

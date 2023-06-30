@@ -1,3 +1,5 @@
+package bioinfomatics_stronghold;
+
 public class MRNA_ {
 
     public static void main(String[] args) {

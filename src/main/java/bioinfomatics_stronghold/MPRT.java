@@ -1,15 +1,13 @@
+package bioinfomatics_stronghold;
+
 import com.seegene.insilico.platform.core.bioutil.domain.SeqDomain;
 import com.seegene.insilico.platform.core.bioutil.io.FastSeqReader;
-import com.seegene.insilico.platform.core.util.common.Webtools;
 import org.apache.commons.io.IOUtils;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class MPRT {
 
