@@ -16,7 +16,7 @@ public class EDIT {
 
     public static void main(String[] args) {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:/dev/rosalind/rosalind_edit.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:/dev/rosalind/stronghold/rosalind_edit.txt");
 
 //        String protein1 = "PLEASANTLY";
 //        String protein2 = "MEANLY";

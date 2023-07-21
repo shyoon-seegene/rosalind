@@ -11,7 +11,7 @@ public class PROB {
     public static void main(String[] args) throws IOException {
 
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_prob.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_prob.txt"));
 
         String seq = lines.get(0);
 

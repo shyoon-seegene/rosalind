@@ -14,7 +14,7 @@ public class SIGN {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_sign.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_sign.txt"));
         int n = Integer.valueOf(lines.get(0));
 
 //        int n = 3;

@@ -13,7 +13,7 @@ public class CORR {
     public static void main(String[] args) {
 
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_corr.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_corr.txt");
 
         Map<String, Integer> map = new LinkedHashMap<>();
         Set<String> oriSet = new HashSet<>();

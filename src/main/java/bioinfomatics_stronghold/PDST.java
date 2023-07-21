@@ -9,7 +9,7 @@ public class PDST {
 
     public static void main(String[] args) {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_pdst.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_pdst.txt");
 
 
         double[][] mat = new double[seqList.getListSize()][seqList.getListSize()];

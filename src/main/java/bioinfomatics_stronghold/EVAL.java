@@ -10,7 +10,7 @@ public class EVAL {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_eval.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_eval.txt"));
 
         int len = Integer.valueOf(lines.get(0));
         String seq = lines.get(1);

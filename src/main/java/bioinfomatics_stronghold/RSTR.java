@@ -12,7 +12,7 @@ public class RSTR {
     public static void main(String[] args) throws IOException {
 
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_rstr.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_rstr.txt"));
 
         String seq = lines.get(1);
 

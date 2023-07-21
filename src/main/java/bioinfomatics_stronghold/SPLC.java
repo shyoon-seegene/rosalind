@@ -10,7 +10,7 @@ public class SPLC {
 
     public static void main(String[] args) {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:/dev/rosalind/rosalind_splc.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:/dev/rosalind/stronghold/rosalind_splc.txt");
 
         String seq = seqList.getList().get(0).getSequence();
         for(int i=1; i<seqList.getList().size(); i++){

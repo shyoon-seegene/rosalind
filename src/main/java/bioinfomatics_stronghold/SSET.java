@@ -16,7 +16,7 @@ public class SSET {
         System.out.println(nCrB(100,2));
 
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_sset.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_sset.txt"));
 
         int n = Integer.valueOf(lines.get(0));
 

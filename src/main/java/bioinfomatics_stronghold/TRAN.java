@@ -9,7 +9,7 @@ public class TRAN {
     public static void main(String[] args) {
 
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_tran.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_tran.txt");
 
 
         String seq1 = seqList.get(0).getSequence();

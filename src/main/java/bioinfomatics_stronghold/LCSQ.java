@@ -16,7 +16,7 @@ public class LCSQ {
         String seq2 = "ACACTGTGA";
 
         System.out.println(longestCommonSubsequence(seq1, seq2));
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_lcsq.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_lcsq.txt");
 
         System.out.println(longestCommonSubsequence(seqList.get(0).getSequence(), seqList.get(1).getSequence()));
 

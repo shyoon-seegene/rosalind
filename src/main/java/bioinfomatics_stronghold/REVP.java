@@ -15,7 +15,7 @@ public class REVP {
 
     public static void main(String[] args) throws IOException {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_revp.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_revp.txt");
         String fseq = seqList.get(0).getSequence();
 //        String fseq = "TTTAAATTTAAA";
 

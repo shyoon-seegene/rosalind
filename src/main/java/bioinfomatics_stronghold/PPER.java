@@ -11,7 +11,7 @@ public class PPER {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_pper.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_pper.txt"));
 
         String[] s = lines.get(0).split("\\s+");
 

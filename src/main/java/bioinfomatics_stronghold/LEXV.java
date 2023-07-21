@@ -41,7 +41,7 @@ public class LEXV {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_lexv.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_lexv.txt"));
         getComb2(lines.get(0), Integer.valueOf(lines.get(1)));
     }
 

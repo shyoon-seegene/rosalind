@@ -16,7 +16,7 @@ public class MPRT {
 
 
         MPRT main = new MPRT();
-        main.run("C:\\dev\\rosalind\\rosalind_mprt.txt");
+        main.run("C:\\dev\\rosalind\\stronghold\\rosalind_mprt.txt");
 
 
     }

@@ -30,7 +30,7 @@ public class CAT {
 
         List<Integer> catalanNodesList = new ArrayList<>();
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_cat_4_dataset.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_cat_4_dataset.txt");
 
 //        long a = getNum(testseq1, 0);
 //        long a = getNum(seqList.get(0).getSequence());

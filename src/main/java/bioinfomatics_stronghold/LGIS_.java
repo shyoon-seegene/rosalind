@@ -12,7 +12,7 @@ public class LGIS_ {
     public static void main(String[] args) throws IOException {
 
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_lgis.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_lgis.txt"));
 
         String[] nums = lines.get(1).split("\\s+");
         Integer[] numArr = Arrays.stream(nums).map(Integer::valueOf).toArray(Integer[]::new);

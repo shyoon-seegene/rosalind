@@ -12,7 +12,7 @@ public class TREE {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_tree.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_tree.txt"));
         int n = Integer.valueOf(lines.get(0));
 
         Map<Integer, Integer> memberIndexMap = new HashMap<>();
@@ -82,7 +82,7 @@ public class TREE {
 
     public static void failedLogic1() throws IOException {
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_tree.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_tree.txt"));
 
         int n = Integer.valueOf(lines.get(0));
 
@@ -176,7 +176,7 @@ public class TREE {
     }
 
     public static void failedLogic2() throws IOException {
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_tree.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/rosalind_tree.txt"));
 
         int n = Integer.valueOf(lines.get(0));
 
@@ -250,7 +250,7 @@ public class TREE {
 //            }
 //        }
 //
-//        FileWriter fw = new FileWriter(new File("C:/dev/rosalind/rosalind_tree_check.txt"));
+//        FileWriter fw = new FileWriter(new File("C:/dev/rosalind/stronghold/rosalind_tree_check.txt"));
 //        for(int j=1; j<lines.size(); j++) {
 //            String[] s = lines.get(j).split("\\s+");
 //            int n1 = Integer.valueOf(s[0]);

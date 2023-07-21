@@ -7,7 +7,7 @@ public class KMP {
 
     public static void main(String[] args) {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_kmp.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_kmp.txt");
         int[] arr = getPi(seqList.get(0).getSequence());
 
         for(int i : arr){

@@ -12,7 +12,7 @@ public class ASPC {
     public static void main(String[] args) throws IOException {
 
 
-        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/rosalind_aspc.txt"));
+        List<String> lines = IOUtils.readLines(new FileReader("C:/dev/rosalind/stronghold/stronghold/rosalind_aspc.txt"));
         int n = Integer.valueOf(lines.get(0).split("\\s+")[0]);
         int r = Integer.valueOf(lines.get(0).split("\\s+")[1]);
 

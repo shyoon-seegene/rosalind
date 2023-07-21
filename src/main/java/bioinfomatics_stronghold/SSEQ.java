@@ -9,7 +9,7 @@ public class SSEQ {
     public static void main(String[] args) {
 
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_sseq.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_sseq.txt");
 
         SeqDomain total = seqList.get(0);
         SeqDomain sub = seqList.get(1);

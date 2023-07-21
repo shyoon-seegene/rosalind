@@ -10,7 +10,7 @@ public class LONG_ {
 
     public static void main(String[] args) {
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_long.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_long.txt");
 
         String assemble = makeAssemble(seqList, null);
 
@@ -61,7 +61,7 @@ public class LONG_ {
     }
 
     static void testCode1(){
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_long.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\rosalind_long.txt");
 
 //        SeqDomainList seqList = new SeqDomainList();
 //        seqList.add("1", "ATTAGACCTG");

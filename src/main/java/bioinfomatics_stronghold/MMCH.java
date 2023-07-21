@@ -10,7 +10,7 @@ public class MMCH {
     public static void main(String[] args) {
 
 
-        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\rosalind_mmch.txt");
+        SeqDomainList seqList = FastSeqReader.importFileToSeqDomainList("C:\\dev\\rosalind\\stronghold\\stronghold\\rosalind_mmch.txt");
 
         String seq = seqList.get(0).getSequence();
         System.out.println(seq);
